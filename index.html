@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="fav.png" type="image/x-icon">
+    <script src="script.js" defer></script>
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="mainContainer">
+    <h3>Password Generator</h3>
+    <!-- <img src="fav.png" alt="Lock"> -->
+    <div class="container-password">
+        <div class="password_little_div">
+            <p id="password"></p>
+        </div>
+        <div class="copy">
+            <img class="copy" id="copy"src="https://static.thenounproject.com/png/1187150-200.png" alt="copy">
+        </div>
+    </div>
+    <div class="input">
+        <p>Password length: <input type="number" id="length" min="4" max="40"></p>
+        <input type="range" min="4" max="20" value="4" id="range">
+    </div>
+    <div class="boxes">
+        <div class="container">
+        <!-- Rounded switch -->
+        <div class="box">
+            <p>Uppercase</p>
+            <label class="switch">
+                <input type="checkbox" id="uppercase">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="box">
+            <p>Lowercase</p>
+            <label class="switch">
+                <input type="checkbox" id="lowercase">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="box">
+            <p>Numbers</p>
+            <label class="switch">
+                <input type="checkbox" id="numbers">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="box">
+            <p>Symbols</p>
+            <label class="switch">
+                <input type="checkbox" id="symbols">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        </div>
+    </div>
+    <button id="generate">Generate</button>
+    </div>
+</body>
+</html>
